@@ -3,6 +3,30 @@
 #### Architechture
 <img width="701" alt="grpc_arch" src="https://github.com/user-attachments/assets/0b15cf03-5cb5-467f-9ff6-09d66f638d94" />
 
+#### Why do we care about gRPC?
+
+1. **Performance (faster in most cases) w/ protocol buffers and http2**
+   
+Protobuf is a binary format, which is typically smaller and faster to parse than JSON.
+gRPC streams data over HTTP/2 by default, allowing faster, multiplexed connections – no need to open multiple TCP sockets.
+  
+2. **Strongly-Typed Contracts causes less errors**
+   
+Protobuf (.proto files) define strict schemas for requests and responses.
+Each language has auto-generated code from .proto, ensuring type safety and fewer runtime errors.
+With HTTP/JSON, you must manually maintain schemas (e.g., OpenAPI), but it’s still just dynamic JSON in the end – more prone to mismatches.
+
+  
+3. **Built-In Streaming with HTTP2**
+   
+gRPC supports client-streaming, server-streaming, and bidirectional streaming out of the box.
+HTTP/JSON typically uses long polling or WebSockets for streaming, which can be more complex.
+  
+4. **Generate matching code for all lanagues based on proto file**
+   
+gRPC auto-generates client stubs and server interfaces for each language (Go, Python, Java, JavaScript, etc.).
+This means less boilerplate and consistent data structures across your entire stack.
+HTTP/JSON typically requires manually writing client libraries or using frameworks like OpenAPI, but not as seamlessly integrated.
 
 #### Setup
 ```
