@@ -1,9 +1,9 @@
 # go-grpc-microservice
 
-#### Architechture
+## Architechture
 <img width="701" alt="grpc_arch" src="https://github.com/user-attachments/assets/0b15cf03-5cb5-467f-9ff6-09d66f638d94" />
 
-#### Why do we care about gRPC?
+## Why do we care about gRPC?
 
 1. **Performance (faster in most cases) w/ protocol buffers and http2**
    
@@ -28,7 +28,7 @@ gRPC auto-generates client stubs and server interfaces for each language (Go, Py
 This means less boilerplate and consistent data structures across your entire stack.
 HTTP/JSON typically requires manually writing client libraries or using frameworks like OpenAPI, but not as seamlessly integrated.
 
-#### Setup
+## Setup
 ```
 brew install protobuf
 ```
