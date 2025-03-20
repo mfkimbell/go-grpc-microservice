@@ -18,6 +18,11 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 go get google.golang.org/grpc
 ```
 
+Then run:
+`make gen` to build the protocol buffer server interfaces code
+`make orders` to build the 8000 http server and 9000 gRPC server
+`make kitchen` to build the 1000 http frontend server
+
 ✅ Handler Layer (OrdersGrpcHandler or OrdersHTTPHandler)
 - The handler layer processes the request and calls the service.
 - both call `ordersService.CreateOrder`
