@@ -1,7 +1,7 @@
 # go-grpc-microservice
 
 #### Architechture
-<img width="601" alt="grpc_arch" src="https://github.com/user-attachments/assets/0b15cf03-5cb5-467f-9ff6-09d66f638d94" />
+<img width="701" alt="grpc_arch" src="https://github.com/user-attachments/assets/0b15cf03-5cb5-467f-9ff6-09d66f638d94" />
 
 
 #### Setup
